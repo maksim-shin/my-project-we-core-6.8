@@ -33,8 +33,7 @@
 body {
     background-color: #F8F8F8;
     font-family: 'TT Lakes', sans-serif;
-    overflow-y: auto;
-    overflow-x: hidden;
+    
 }
 
 /* Services header */
@@ -80,17 +79,33 @@ body {
     gap: 20px;
     justify-content: flex-start;
     align-items: center;
-    
 }
+
+/* Navigation scroll */
+.services__navigation--scroll {
+    overflow-x:scroll;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+   
+.services__navigation--scroll::-webkit-scrollbar { display: none; }
 
 .services__navigation--link {
     display: flex;
     flex: 0 0 auto;
     text-decoration: none;
     padding: 8px 20px;
+    color: #7E7E82;
+    border: 2px solid transparent;
+    border-radius: 8px; 
+}
+
+.services__navigation--link:hover,
+.services__navigation--link:active {
     border: 2px solid #B8FFEC;
     border-radius: 8px;
-    color: #7E7E82; 
+    transition: border-color 0.2s;
 }
 
 .services__content {

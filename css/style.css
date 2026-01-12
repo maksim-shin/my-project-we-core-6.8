@@ -1,0 +1,165 @@
+
+/* FONTS */
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+    
+
+
+/* GLOBAL STYLE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #F8F8F8;
+    font-family: 'TT Lakes', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Services header */
+
+.page {
+    min-width: 320px;
+}
+
+.services__toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #ffffff;
+}
+
+.services__toolbar--button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.hero__section {
+    display: flex;
+    flex-direction: column; 
+    margin: 24px 16px;  
+}
+
+.hero__section--title {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+}
+
+.services__navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1120px;
+    margin: 24px 16px;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.services__navigation--link {
+    display: flex;
+    flex: 0 0 auto;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 2px solid #B8FFEC;
+    border-radius: 8px;
+    color: #7E7E82; 
+}
+
+.services__content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.services__text--p1 {
+    margin-bottom: 20px;
+}
+
+.services__text--p2 {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.services__button--read--more {
+    display: flex;
+    width: 132px;
+    height: 24px;
+    margin: 16px;
+    border: none;
+    background: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__content__image {
+    max-width: 320px; 
+    height: auto;       
+    display: block;
+    justify-self: center;
+    position: relative; 
+}
+
+
+
+@media (min-width: 768px) {
+
+    .services__content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 48px;
+    }
+
+    .services__text {
+        width: 50%;
+    }
+
+    .services__content__image {
+        max-width: 360px;
+        flex: 0 0 360px;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .services__content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 48px;
+    }
+
+    .services__text {
+        width: 100%;
+    }
+
+    .services__content__image {
+        max-width: 532px;
+        flex: 0 0 360px;
+    }
+}

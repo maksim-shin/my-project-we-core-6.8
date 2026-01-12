@@ -160,6 +160,5 @@ body {
 
     .services__content__image {
         max-width: 532px;
-        flex: 0 0 360px;
     }
 }

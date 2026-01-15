@@ -37,29 +37,67 @@ body {
 }
 
 /* Services header */
-
 .page {
-    min-width: 320px;
+    min-width: 320px;   
 }
 
+
+/* Buttons position */
 .services__toolbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 24px 16px;
+    gap: 16px;
     background-color: #ffffff;
 }
 
-.services__toolbar--button {
+.services__toolbar--button {    
     background: none;
     border: none;
-    padding: 0;
 }
 
-.hero__section {
+.company__logo {
+    margin-right: auto;
+}
+
+.toolbar__button--middle {
     display: flex;
-    flex-direction: column; 
-    margin: 24px 16px;  
+    gap: 16px;
+   
+}
+
+.toolbar__button--right {
+    display: flex;
+    gap: 16px;
+} 
+
+.divider__1,
+.divider__2 {
+    height: 32px;
+    border: 1px solid #EAEAEA;
+    color: #EAEAEA;
+}
+
+.divider__1,
+.toolbar__button--middle,
+.button__label--repair,
+.button__label--checkstatus {
+    display: none;
+    white-space: nowrap;
+}
+
+/* HERO section */
+.section__navbar {
+    display: flex;
+    flex-direction: row; 
+    margin: 24px 0;  
+}
+.highlight {
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .hero__section--title {
@@ -69,6 +107,7 @@ body {
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
+    margin-left: 16px;
 }
 
 .services__navigation {
@@ -103,15 +142,16 @@ body {
 
 .services__navigation--link:hover,
 .services__navigation--link:active {
-    border: 2px solid #B8FFEC;
+    border: 2px solid #41F6D7;
     border-radius: 8px;
     transition: border-color 0.2s;
 }
 
 .services__content {
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    flex-direction: column; 
+    padding: clamp(16px, 3vw, 34px);
+
 }
 .services__text--p1 {
     margin-bottom: 20px;
@@ -134,19 +174,22 @@ body {
 }
 
 .services__content__image {
-    max-width: 320px; 
-    height: auto;       
-    display: block;
+    width: 100px;   
 }
 
 
-
-@media (min-width: 768px) {
+    
+@media (min-width: 431px) and (max-width: 768px) {
 
     .services__content {
         flex-direction: row;
         align-items: flex-start;
-        gap: 48px;
+        gap: 48px;  
+    }
+
+    .divider__1,
+    .toolbar__button--middle {
+        display: flex;
     }
 
     .services__text {
@@ -154,12 +197,15 @@ body {
     }
 
     .services__content__image {
-        max-width: 360px;
-        flex: 0 0 360px;
+        width: 50%;
+        
     }
+    
+    
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 769px) and (max-width: 1200px) {
+
 
     .services__content {
         flex-direction: row;
@@ -167,11 +213,23 @@ body {
         gap: 48px;
     }
 
+    .divider__1,
+    .divider__2,
+    .toolbar__button--middle {
+        display: none;
+    }
+
+    .button__label--repair,
+    .button__label--checkstatus {
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+    }
     .services__text {
         width: 100%;
     }
 
     .services__content__image {
-        max-width: 532px;
+        
     }
 }

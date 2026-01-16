@@ -178,7 +178,6 @@ body {
 
 .services__text,
 .services__content__image {
-    width: 100%;
     flex-shrink: 0;
     
 }
@@ -216,6 +215,7 @@ body {
 @media (min-width: 431px) {
 
     .services__content {
+        display: flex;
         flex-direction: row;
         align-items: flex-start;
     }
@@ -227,6 +227,7 @@ body {
 
     .services__text {
         width: 50%;
+        margin-right: 24px;
     }
 
     .services__content__image {
@@ -256,6 +257,14 @@ body {
 
     .toolbar__button--right--2 {
         display: flex;
+    }
+
+    .button__label--repair,
+    .button__label--checkstatus {
+        font-family: 'TT Lakes', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1B1C21;
     }
 
    

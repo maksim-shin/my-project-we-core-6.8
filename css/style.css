@@ -38,7 +38,9 @@ body {
 
 /* Services header */
 .page {
-    min-width: 320px;   
+    min-width: 320px; 
+    max-width: 1120px; 
+    margin: 0 auto; 
 }
 
 
@@ -150,17 +152,33 @@ body {
 .services__content {
     display: flex;
     flex-direction: column; 
-    padding: clamp(16px, 3vw, 34px);
-
+    padding: 16px;
+    gap: 20px;
 }
+
+.services__text,
+.services__content__image {
+    width: 100%;
+    
+}
+
+.services__content__image{
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.services__content__image--img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+
 .services__text--p1 {
     margin-bottom: 20px;
 }
 
-.services__text--p2 {
-    max-height: 0;
-    overflow: hidden;
-}
+
 
 .services__button--read--more {
     display: flex;
@@ -173,18 +191,13 @@ body {
     align-items: center;
 }
 
-.services__content__image {
-    width: 100px;   
-}
-
 
     
-@media (min-width: 431px) and (max-width: 768px) {
+@media (max-width: 431px) {
 
     .services__content {
         flex-direction: row;
         align-items: flex-start;
-        gap: 48px;  
     }
 
     .divider__1,
@@ -198,19 +211,19 @@ body {
 
     .services__content__image {
         width: 50%;
+      
         
     }
     
     
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 1200px) {
 
 
     .services__content {
         flex-direction: row;
         align-items: flex-start;
-        gap: 48px;
     }
 
     .divider__1,

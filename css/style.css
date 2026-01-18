@@ -243,6 +243,21 @@ body {
     .services__toolbar {
         display: none;
     }
+
+    
+    .services__navigation {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1120px;
+        margin: 24px 16px;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .services__navigation--link {
+        white-space: normal;
+
     .services__content {
         flex-direction: row;
         align-items: flex-start;

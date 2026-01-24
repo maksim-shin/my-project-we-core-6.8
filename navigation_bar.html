@@ -7,55 +7,57 @@
     <title>Navigation</title>
 </head>
 <body>
+        
     <nav class="modal__navigation">
-        <div class="modal__navigation__backdrop"></div>
 
         <div class="navigation__header">
+            <div class="navigation__header__left">
+                <button class="navigation__button">
+                    <img class="navigation__btn--close" src="images/ic/burger-close.svg" alt="">
+                </button>
 
-            <button>
-                <img src="images/ic/burger-close.svg" alt="">
-            </button>
+                <img  class="company--logo" src="images/Group.svg" alt="">
+            </div>
 
-            <img src="images/Group.svg" alt="">
+            <div class="navigation__header__right">
+                <button class="navigation__button">
+                    <img  class="navigation__btn--search" src="images/ic/search.svg" alt="">
+                </button>
+            </div>
 
-            <button>
-                <img src="images/ic/search.svg" alt="">
-            </button>
-
-                
         </div>
 
         <div class="modal__navigation__panel">
             <ul class="navigation__panel__list">
-                <li class="panel--list--item">
+                <li class="panel__list--item">
                     <a class="list__item--link" href="#">Ремонт техники</a>
                 </li>
-                <li class="panel--list--item">
+                <li class="panel__list--item">
                     <a class="list__item--link" href="#">Услуги и сервис</a>
                 </li>
-                <li class="panel--list--item">
+                <li class="panel__list--item">
                     <a class="list__item--link" href="#">Корпоративным клиентам</a>
                 </li>
-                <li class="panel--list--item">
+                <li class="panel__list--item">
                     <a class="list__item--link" href="#">Продавцам техники</a>
                 </li>
-                <li class="panel--list--item">
+                <li class="panel__list--item">
                     <a class="list__item--link" href="#">Партнерам</a>
                 </li>
-                <li class="panel--list--item">
+                <li class="panel__list--item">
                     <a class="list__item--link" href="#">Производителям</a>
                 </li>
-                <li class="panel--list--item">
+                <li class="panel__list--item">
                     <a class="list__item--link" href="#">Наши сервисные центры</a>
                 </li>
-                <li class="panel--list--item">
+                <li class="panel__list--item">
                     <a class="list__item--link" href="#">Контакты</a>
                 </li>
             </ul>
         </div>
 
         <footer class="modal__panel__footer">
-            <div class="panel__panel__contact">
+            <div class="footer__panel__contact">
                 <a class="panel__contact--call" href="#">
                     <img src="images/ic/call.svg" alt="">
                 </a>
@@ -69,13 +71,19 @@
                 </a>
             </div>
 
-            <div class="company__email"></div>
-            <div class="company__phone"></div>
+            <div class="company__mail">
+                <a class="company__mail--adress" href="mailto:mail@cps.com" class="company__email">mail@cps.com</a>
+            </div>
 
-            <div class="languages">
-                <a class="languages--ru" href="#">RU</a>
-                <a class="languages--en" href="#">EN</a>
-                <a class="languages--ch" href="#">CH</a>
+            <div class="company__phone">
+                <a class="company__phone--number" href="tel:+88008908900" class="company__phone">8 800 890 89 00</a>
+            </div>
+            
+
+            <div class="language__switch">
+                <a class="language--ru" href="#">RU</a>
+                <a class="language--en" href="#">EN</a>
+                <a class="language--ch" href="#">CH</a>
             </div>
 
         </footer>
@@ -84,6 +92,5 @@
 
 
     </nav>
-    
 </body>
 </html>
